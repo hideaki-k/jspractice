@@ -1,4 +1,3 @@
-// idがweatherとついた要素を取得し、elementに代入
-var element = document.getElementById("weather");
-// 代入されたelementinnerHTMLを使用して書き換え
-element.innerHTML = "<span>曇り</span>";
+//quertSelctorでweatherのクラスがついている要素をelementに代入
+var element = document.querySelector('.weather');//class属性ン場合はclass名の前に.をつける
+console.log(element);
