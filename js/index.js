@@ -1,3 +1,9 @@
-//quertSelctorでweatherのクラスがついている要素をelementに代入
-var element = document.querySelector('.weather');//class属性ン場合はclass名の前に.をつける
-console.log(element);
+// [nice]というidがついた要素をクリックしたときのアクションを設定
+document.getElementById("nice").addEventListener("click",function(){
+    //pタグ準備
+    var element = document.createElement("p");
+    //いいねというテキストを準備
+    var text = document.createTextNode("いいね");
+    //pタグの中に「いいね！」を格納して要素を追加
+    document.body.appendChild(element).appendChild(text);
+});
